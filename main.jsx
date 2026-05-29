@@ -4,6 +4,7 @@ import { Heart, Home, Users, ShieldCheck, Utensils, Pill, CalendarDays, Phone, M
 import './styles.css';
 import logo from './logo.png';
 import heroPhoto from './hero-photo.jpg';
+import logo2 from './logo2.png';
 
 const services = [
   { icon: Heart, title: 'Personal Care', text: 'Compassionate support with daily personal care needs.' },
@@ -80,9 +81,13 @@ function App() {
         </section>
 
         <section id="about" className="split-section">
-          <div className="image-panel hands-panel">
-            <Heart size={64} />
-          </div>
+         <div className="image-panel about-photo-panel">
+  <img
+    src={logo2}
+    alt="Forget Me Not Adult Family Home resident care"
+    className="about-photo"
+  />
+</div>
           <div className="text-panel">
             <p className="section-kicker">About Us</p>
             <h2>A place like home, care like family.</h2>
