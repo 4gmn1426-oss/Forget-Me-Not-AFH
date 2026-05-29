@@ -153,14 +153,13 @@ function App() {
           <p className="section-kicker">Gallery</p>
           <h2>A glimpse of home.</h2>
           <div className="gallery-grid">
-            {gallery.map((item) => (
+  {gallery.map((item) => (
   <div className="gallery-item" key={item.title}>
     <img
       src={item.image}
       alt={item.title}
       className="gallery-photo"
     />
-    <span>{item.title}</span>
   </div>
 ))}
           </div>
