@@ -4,12 +4,15 @@ import { Heart, Home, Users, ShieldCheck, Utensils, Pill, CalendarDays, Phone, M
 import './styles.css';
 
 const services = [
-  { icon: Heart, title: 'Personalized Care', text: 'Individual care and daily support tailored to each resident’s needs.' },
-  { icon: Home, title: 'Home-Like Environment', text: 'A peaceful residential setting that feels warm, clean, and welcoming.' },
-  { icon: Users, title: 'Companionship', text: 'Meaningful connection, conversation, activities, and a sense of belonging.' },
-  { icon: ShieldCheck, title: 'Safe & Comfortable', text: 'A secure environment designed to help families feel confident and at ease.' },
-  { icon: Utensils, title: 'Nutritious Meals', text: 'Home-style meals prepared with care, consistency, and individual needs in mind.' },
-  { icon: Pill, title: 'Daily Living Support', text: 'Support with routines, reminders, grooming, dressing, and daily comfort.' },
+  { icon: Heart, title: 'Personal Care', text: 'Compassionate support with daily personal care needs.' },
+  { icon: ShieldCheck, title: '24-Hour Care & Supervision', text: 'Around-the-clock monitoring, assistance, and support.' },
+  { icon: Pill, title: 'Medication Management', text: 'Medication management, reminders, and monitoring.' },
+  { icon: Utensils, title: 'Meals & Snacks', text: 'Three meals a day plus snacks in a warm, home-like setting.' },
+  { icon: Users, title: 'Activities & Outings', text: 'Engaging activities, outings, companionship, and meaningful connection.' },
+  { icon: Home, title: 'Safe & Clean Environment', text: 'A clean, safe, comfortable home with housekeeping and laundry support.' },
+  { icon: Heart, title: 'Respite & Long-Term Care', text: 'Flexible care options for both short-term respite and long-term support.' },
+  { icon: ShieldCheck, title: 'Personalized Care Plans', text: 'Tailored care plans designed to meet each individual’s unique needs.' },
+  { icon: Users, title: 'ADL Assistance', text: 'Support with bathing, toileting, grooming, dressing, laundry, and shopping.' },
 ];
 
 const gallery = ['Living Room', 'Dining Area', 'Bedroom', 'Outdoor Space'];
@@ -86,9 +89,14 @@ function App() {
           </div>
         </section>
 
+          <p>
+            We support independent living for individuals who may be developmentally disabled,
+            advanced age, physically disabled, emotionally disturbed, or living with mental illness.
+         </p>
+
         <section id="services" className="services-section">
           <p className="section-kicker">Our Services</p>
-          <h2>Support for daily living in a peaceful home setting.</h2>
+          <h2>Supportive care designed around each resident’s needs.</h2>
           <div className="cards">
             {services.map((service) => {
               const Icon = service.icon;
