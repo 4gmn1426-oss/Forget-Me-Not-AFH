@@ -19,59 +19,45 @@ const gallery = [
 function App() {
   return (
     <div className="site">
-      <header className="header">
-        <a className="brand" href="#home" aria-label="Forget Me Not Adult Family Home homepage">
-          <img src="/logo.png" alt="Forget Me Not Adult Family Home logo" />
-        </a>
-        <nav className="nav" aria-label="Primary navigation">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
-        </nav>
-       <a className="phone-pill" href="tel:2624125114">
-  📞 (262) 412-5114
-</a>
+    <header className="header">
+  <a className="brand" href="#home">
+    <img src="/logo.png" alt="Forget Me Not Adult Family Home logo" className="logo" />
+  </a>
 
-<div className="phone-grid">
-  <div>
-    <strong>FMN I</strong>
-    <a href="tel:2626374709">(262) 637-4709</a>
-  </div>
+  <nav className="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <div>
-    <strong>FMN II</strong>
-    <a href="tel:2624560854">(262) 456-0854</a>
-  </div>
+  <a className="phone-pill" href="tel:2624125114">
+    📞 (262) 412-5114
+  </a>
+</header>
 
-  <div>
-    <strong>Business Manager</strong>
-    <a href="tel:2624125114">(262) 412-5114</a>
-  </div>
-</div>
-
-      <main id="home">
-       <section className="hero">
-  <div className="hero-copy">
-    <p className="eyebrow">Compassionate. Personalized. Family-centered.</p>
-    <h1>Where care feels like home.</h1>
-    <div className="divider"><span></span><Heart size={26} fill="currentColor" /><span></span></div>
-    <p className="lead">Forget Me Not Adult Family Home provides loving, attentive care in a warm, comfortable home where your loved one is treated like family.</p>
-    <div className="button-row">
-      <a className="button primary" href="#contact"><CalendarDays size={18} /> Schedule a Tour</a>
-      <a className="button secondary" href="#services">Learn More</a>
+<main id="home">
+  <section className="hero">
+    <div className="hero-copy">
+      <p className="eyebrow">Compassionate. Personalized. Family-centered.</p>
+      <h1>Where care feels like home.</h1>
+      <div className="divider"><span></span><Heart size={26} fill="currentColor" /><span></span></div>
+      <p className="lead">Forget Me Not Adult Family Home provides loving, attentive care in a warm, comfortable home where your loved one is treated like family.</p>
+      <div className="button-row">
+        <a className="button primary" href="#contact"><CalendarDays size={18} /> Schedule a Tour</a>
+        <a className="button secondary" href="#services">Learn More</a>
+      </div>
     </div>
-  </div>
 
-  <div className="hero-card">
-    <img
-      src="/hero-photo.jpg"
-      alt="Caregiver assisting an older adult in a warm home setting"
-      className="hero-photo"
-    />
-<section className="hero">
-   </section>
+    <div className="hero-card">
+      <img
+        src="/hero-photo.jpg"
+        alt="Caregiver assisting an older adult in a warm home setting"
+        className="hero-photo"
+      />
+    </div>
+  </section>
 
         <section className="feature-strip" aria-label="Care highlights">
           <div><Home /><strong>Home-Like Environment</strong><span>Warm and welcoming</span></div>
