@@ -52,26 +52,26 @@ function App() {
 </div>
 
       <main id="home">
-        <section className="hero">
-         <div className="hero-card">
-  <img
-    src="/hero-photo.jpg"
-    alt="Caregiver assisting an older adult in a warm home setting"
-    className="hero-photo"
-  />
-</div>
-          </div>
-          <div className="hero-card" aria-label="Warm living room image placeholder">
-            <div className="room-scene">
-              <div className="sun"></div>
-              <div className="sofa"></div>
-              <div className="pillow one"></div>
-              <div className="pillow two"></div>
-              <div className="plant"></div>
-              <div className="table"></div>
-            </div>
-          </div>
-        </section>
+       <section className="hero">
+  <div className="hero-copy">
+    <p className="eyebrow">Compassionate. Personalized. Family-centered.</p>
+    <h1>Where care feels like home.</h1>
+    <div className="divider"><span></span><Heart size={26} fill="currentColor" /><span></span></div>
+    <p className="lead">Forget Me Not Adult Family Home provides loving, attentive care in a warm, comfortable home where your loved one is treated like family.</p>
+    <div className="button-row">
+      <a className="button primary" href="#contact"><CalendarDays size={18} /> Schedule a Tour</a>
+      <a className="button secondary" href="#services">Learn More</a>
+    </div>
+  </div>
+
+  <div className="hero-card">
+    <img
+      src="/hero-photo.jpg"
+      alt="Caregiver assisting an older adult in a warm home setting"
+      className="hero-photo"
+    />
+  </div>
+</section>
 
         <section className="feature-strip" aria-label="Care highlights">
           <div><Home /><strong>Home-Like Environment</strong><span>Warm and welcoming</span></div>
