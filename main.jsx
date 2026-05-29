@@ -8,6 +8,7 @@ import logo2 from './logo2.png';
 import logo3 from './logo3.png';
 import logo4 from './logo4.png';
 import logo5 from './logo5.png';
+import logo6 from './logo6.png';
 import logo7 from './logo7.png';
 import fmn11 from "./fmn1-1.jpg";
 import fmn12 from "./fmn1-2.jpg";
