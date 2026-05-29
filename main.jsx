@@ -12,52 +12,59 @@ const services = [
   { icon: Pill, title: 'Daily Living Support', text: 'Support with routines, reminders, grooming, dressing, and daily comfort.' },
 ];
 
-const gallery = [
-  'Living Room', 'Dining Area', 'Bedroom', 'Outdoor Space'
-];
+const gallery = ['Living Room', 'Dining Area', 'Bedroom', 'Outdoor Space'];
 
 function App() {
   return (
     <div className="site">
-    <header className="header">
-  <a className="brand" href="#home">
-    <img src="/logo.png" alt="Forget Me Not Adult Family Home logo" className="logo" />
-  </a>
+      <header className="header">
+        <a className="brand" href="#home">
+          <img src="/logo.png" alt="Forget Me Not Adult Family Home logo" className="logo" />
+        </a>
 
-  <nav className="nav">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
+        <nav className="nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-  <a className="phone-pill" href="tel:2624125114">
-    📞 (262) 412-5114
-  </a>
-</header>
+        <a className="phone-pill" href="tel:2624125114">
+          <Phone size={18} /> (262) 412-5114
+        </a>
+      </header>
 
-<main id="home">
-  <section className="hero">
-    <div className="hero-copy">
-      <p className="eyebrow">Compassionate. Personalized. Family-centered.</p>
-      <h1>Where care feels like home.</h1>
-      <div className="divider"><span></span><Heart size={26} fill="currentColor" /><span></span></div>
-      <p className="lead">Forget Me Not Adult Family Home provides loving, attentive care in a warm, comfortable home where your loved one is treated like family.</p>
-      <div className="button-row">
-        <a className="button primary" href="#contact"><CalendarDays size={18} /> Schedule a Tour</a>
-        <a className="button secondary" href="#services">Learn More</a>
-      </div>
-    </div>
+      <main id="home">
+        <section className="hero">
+          <div className="hero-copy">
+            <p className="eyebrow">Compassionate. Personalized. Family-centered.</p>
+            <h1>Where care feels like home.</h1>
+            <div className="divider">
+              <span></span>
+              <Heart size={26} fill="currentColor" />
+              <span></span>
+            </div>
+            <p className="lead">
+              Forget Me Not Adult Family Home provides loving, attentive care in a warm,
+              comfortable home where your loved one is treated like family.
+            </p>
+            <div className="button-row">
+              <a className="button primary" href="#contact">
+                <CalendarDays size={18} /> Schedule a Tour
+              </a>
+              <a className="button secondary" href="#services">Learn More</a>
+            </div>
+          </div>
 
-    <div className="hero-card">
-      <img
-        src="/hero-photo.jpg"
-        alt="Caregiver assisting an older adult in a warm home setting"
-        className="hero-photo"
-      />
-    </div>
-  </section>
+          <div className="hero-card">
+            <img
+              src="/hero-photo.jpg"
+              alt="Caregiver assisting an older adult in a warm home setting"
+              className="hero-photo"
+            />
+          </div>
+        </section>
 
         <section className="feature-strip" aria-label="Care highlights">
           <div><Home /><strong>Home-Like Environment</strong><span>Warm and welcoming</span></div>
@@ -109,7 +116,12 @@ function App() {
           <p className="section-kicker">Gallery</p>
           <h2>A glimpse of home.</h2>
           <div className="gallery-grid">
-            {gallery.map((item) => <div className="gallery-item" key={item}><ImageIcon /><span>{item}</span></div>)}
+            {gallery.map((item) => (
+              <div className="gallery-item" key={item}>
+                <ImageIcon />
+                <span>{item}</span>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -119,11 +131,14 @@ function App() {
             <h2>We’d love to connect with you.</h2>
             <p>Reach out to ask questions, check availability, or schedule a visit.</p>
             <div className="contact-list">
-              <p><Phone /> Add phone number</p>
+              <p><Phone /> FMN I: <a href="tel:2626374709">(262) 637-4709</a></p>
+              <p><Phone /> FMN II: <a href="tel:2624560854">(262) 456-0854</a></p>
+              <p><Phone /> Business Manager: <a href="tel:2624125114">(262) 412-5114</a></p>
               <p><Mail /> Add email address</p>
               <p><MapPin /> Add city/state</p>
             </div>
           </div>
+
           <form className="contact-card" onSubmit={(e) => e.preventDefault()}>
             <label>Name<input placeholder="Your name" /></label>
             <label>Email<input placeholder="your@email.com" /></label>
