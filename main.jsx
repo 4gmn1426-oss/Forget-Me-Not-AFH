@@ -5,6 +5,10 @@ import './styles.css';
 import logo from './logo.png';
 import heroPhoto from './hero-photo.jpg';
 import logo2 from './logo2.png';
+import logo3 from './logo3.png';
+import logo4 from './logo4.png';
+import logo5 from './logo5.png';
+import logo7 from './logo7.png';
 
 const services = [
   { icon: Heart, title: 'Personal Care', text: 'Compassionate support with daily personal care needs.' },
@@ -18,7 +22,24 @@ const services = [
   { icon: Users, title: 'ADL Assistance', text: 'Support with bathing, toileting, grooming, dressing, laundry, and shopping.' },
 ];
 
-const gallery = ['Living Room', 'Dining Area', 'Bedroom', 'Outdoor Space'];
+const gallery = [
+  {
+    title: 'Living Room',
+    image: logo3
+  },
+  {
+    title: 'Dining Area',
+    image: logo4
+  },
+  {
+    title: 'Bedroom',
+    image: logo5
+  },
+  {
+    title: 'Outdoor Space',
+    image: logo7
+  }
+];
 
 function App() {
   return (
