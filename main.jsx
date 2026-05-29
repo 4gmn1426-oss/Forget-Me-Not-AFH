@@ -22,7 +22,7 @@ function App() {
     <div className="site">
       <header className="header">
         <a className="brand" href="#home">
-          <img src="/logo.png" alt="Forget Me Not Adult Family Home logo" className="logo" />
+          <img src="logo.png" alt="Forget Me Not Adult Family Home logo" className="logo" />
         </a>
 
         <nav className="nav">
@@ -62,7 +62,7 @@ function App() {
 
           <div className="hero-card">
             <img
-              src="/hero-photo.jpg"
+              src="hero-photo.jpg"
               alt="Caregiver assisting an older adult in a warm home setting"
               className="hero-photo"
             />
