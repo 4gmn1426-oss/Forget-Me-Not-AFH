@@ -9,6 +9,20 @@ import logo3 from './logo3.png';
 import logo4 from './logo4.png';
 import logo5 from './logo5.png';
 import logo7 from './logo7.png';
+import fmn11 from "./fmn1-1.jpg";
+import fmn12 from "./fmn1-2.jpg";
+import fmn13 from "./fmn1-3.jpg";
+import fmn14 from "./fmn1-4.jpg";
+import fmn15 from "./fmn1-5.jpg";
+import fmn16 from "./fmn1-6.jpg";
+import fmn17 from "./fmn1-7.jpg";
+
+import fmn21 from "./fmn2-1.jpg";
+import fmn22 from "./fmn2-2.jpg";
+import fmn23 from "./fmn2-3.jpg";
+import fmn24 from "./fmn2-4.jpg";
+import fmn25 from "./fmn2-5.jpg";
+import fmn26 from "./fmn2-6.jpg";
 
 const services = [
   { icon: Heart, title: 'Personal Care', text: 'Compassionate support with daily personal care needs.' },
@@ -150,19 +164,37 @@ function App() {
         </section>
 
         <section id="gallery" className="gallery-section">
-          <p className="section-kicker">Gallery</p>
-          <h2>A glimpse of home.</h2>
-          <div className="gallery-grid">
-  {gallery.map((item) => (
-  <div className="gallery-item" key={item.title}>
-    <img
-      src={item.image}
-      alt={item.title}
-      className="gallery-photo"
-    />
+          <section id="gallery" className="gallery-section">
+  <p className="section-kicker">Gallery</p>
+  <h2>A glimpse of home.</h2>
+
+  <h3 className="gallery-title">FMN I</h3>
+
+  <div className="gallery-grid">
+    <img src={fmn11} alt="FMN I" />
+    <img src={fmn12} alt="FMN I" />
+    <img src={fmn13} alt="FMN I" />
+    <img src={fmn14} alt="FMN I" />
+    <img src={fmn15} alt="FMN I" />
+    <img src={fmn16} alt="FMN I" />
+    <img src={fmn17} alt="FMN I" />
   </div>
-))}
-          </div>
+
+  <h3 className="gallery-title">FMN II</h3>
+
+  <div className="gallery-grid">
+    <img src={fmn21} alt="FMN II" />
+    <img src={fmn22} alt="FMN II" />
+    <img src={fmn23} alt="FMN II" />
+    <img src={fmn24} alt="FMN II" />
+    <img src={fmn25} alt="FMN II" />
+    <img src={fmn26} alt="FMN II" />
+    <img src={logo5} alt="FMN II" />
+    <img src={logo4} alt="FMN II" />
+    <img src={logo3} alt="FMN II" />
+    <img src={logo6} alt="FMN II" />
+  </div>
+</section>
         </section>
         
 <section id="hiring" className="cta-band">
