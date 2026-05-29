@@ -71,7 +71,7 @@ function App() {
       className="hero-photo"
     />
   </div>
-</section>
+<section className="hero">
 
         <section className="feature-strip" aria-label="Care highlights">
           <div><Home /><strong>Home-Like Environment</strong><span>Warm and welcoming</span></div>
