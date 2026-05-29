@@ -150,13 +150,21 @@ function App() {
 </div>
           </div>
 
-          <form className="contact-card" onSubmit={(e) => e.preventDefault()}>
+          <form 
+  className="contact-card" 
+  action="https://formsubmit.co/4gmn1426@gmail.com" 
+  method="POST"
+>
+            <input type="hidden" name="_subject" value="New Forget Me Not AFH Website Inquiry" />
+<input type="hidden" name="_captcha" value="false" />
+<input type="hidden" name="_template" value="table" />
+            
             <label>Name<input placeholder="Your name" /></label>
             <label>Email<input placeholder="your@email.com" /></label>
             <label>Phone<input placeholder="Phone number" /></label>
             <label>Message<textarea placeholder="How can we help?" /></label>
             <button type="submit"><MessageCircle size={18} /> Send Message</button>
-            <small>This demo form displays on the website. Connect a form service before accepting real inquiries.</small>
+           <small>Your message will be sent directly to Forget Me Not Adult Family Home.</small>
           </form>
         </section>
       </main>
