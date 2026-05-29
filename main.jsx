@@ -53,7 +53,7 @@ function App() {
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#services">Services</a>
-          <a href="#gallery">Gallery</a>
+          <a href="/gallery.html">Gallery</a>
           <a href="#hiring">We're Hiring</a>
           <a href="#contact">Contact</a>
         </nav>
