@@ -2,6 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Heart, Home, Users, ShieldCheck, Utensils, Pill, CalendarDays, Phone, Mail, MapPin, Image as ImageIcon, MessageCircle } from 'lucide-react';
 import './styles.css';
+import logo from './logo.png';
+import heroPhoto from './hero-photo.jpg';
 
 const services = [
   { icon: Heart, title: 'Personal Care', text: 'Compassionate support with daily personal care needs.' },
@@ -22,7 +24,7 @@ function App() {
     <div className="site">
       <header className="header">
         <a className="brand" href="#home">
-          <img src="logo.png" alt="Forget Me Not Adult Family Home logo" className="logo" />
+          <img src={logo} alt="Forget Me Not Adult Family Home logo" className="logo" />
         </a>
 
         <nav className="nav">
@@ -61,8 +63,8 @@ function App() {
           </div>
 
           <div className="hero-card">
-            <img
-              src="hero-photo.jpg"
+           <img 
+              src={heroPhoto}
               alt="Caregiver assisting an older adult in a warm home setting"
               className="hero-photo"
             />
@@ -159,7 +161,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <img src="/logo.png" alt="Forget Me Not logo" />
+        <img src={logo} alt="Forget Me Not logo" />
         <p>© {new Date().getFullYear()} Forget Me Not Adult Family Home. All rights reserved.</p>
       </footer>
     </div>
