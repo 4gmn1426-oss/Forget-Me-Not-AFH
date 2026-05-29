@@ -140,13 +140,14 @@ function App() {
             <p className="section-kicker">Contact</p>
             <h2>We’d love to connect with you.</h2>
             <p>Reach out to ask questions, check availability, or schedule a visit.</p>
-            <div className="contact-list">
-              <p><Phone /> FMN I: <a href="tel:2626374709">(262) 637-4709</a></p>
-              <p><Phone /> FMN II: <a href="tel:2624560854">(262) 456-0854</a></p>
-              <p><Phone /> Business Manager: <a href="tel:2624125114">(262) 412-5114</a></p>
-              <p><Mail /> Add email address</p>
-              <p><MapPin /> Add city/state</p>
-            </div>
+           ```jsx
+<div className="contact-list">
+  <p><Phone /> FMN I: <a href="tel:2626374709">(262) 637-4709</a></p>
+  <p><Phone /> FMN II: <a href="tel:2624560854">(262) 456-0854</a></p>
+  <p><Phone /> Business Manager: <a href="tel:2624125114">(262) 412-5114</a></p>
+  <p><Mail /> <a href="mailto:4gmn1426@gmail.com">4gmn1426@gmail.com</a></p>
+  <p><MapPin /> Racine, Wisconsin</p>
+</div>
           </div>
 
           <form className="contact-card" onSubmit={(e) => e.preventDefault()}>
