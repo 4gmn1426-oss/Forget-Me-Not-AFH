@@ -32,6 +32,7 @@ function App() {
           <a href="#about">About</a>
           <a href="#services">Services</a>
           <a href="#gallery">Gallery</a>
+          <a href="#hiring">We're Hiring</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -134,7 +135,22 @@ function App() {
             ))}
           </div>
         </section>
-
+        
+<section id="hiring" className="cta-band">
+  <div className="cta-icon"><Users /></div>
+  <div>
+    <h2>We’re Hiring</h2>
+    <p>
+      Interested in joining the Forget Me Not Adult Family Home team?
+      We’d love to hear from compassionate, dependable individuals who have a heart for caring for others.
+    </p>
+    <p>
+      Please fill out the contact form below and include “Employment Interest” in your message.
+    </p>
+  </div>
+  <a className="button primary light" href="#contact">Employment Interest</a>
+</section>
+        
         <section id="contact" className="contact-section">
           <div>
             <p className="section-kicker">Contact</p>
@@ -169,7 +185,7 @@ function App() {
   <input id="visitorPhone" type="tel" name="Phone" placeholder="Phone number" required />
 
   <label htmlFor="visitorMessage">Message</label>
-  <textarea id="visitorMessage" name="Message" placeholder="How can we help?" required></textarea>
+ <textarea id="visitorMessage" name="Message" placeholder="How can we help? For employment, please write Employment Interest." required></textarea>
 
   <button type="submit">
     <MessageCircle size={18} /> Send Message
