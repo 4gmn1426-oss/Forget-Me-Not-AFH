@@ -150,7 +150,7 @@ function App() {
 </div>
           </div>
 
-       <form
+     <form
   className="contact-card"
   action="https://formsubmit.co/4gmn1426@gmail.com"
   method="POST"
@@ -159,25 +159,17 @@ function App() {
   <input type="hidden" name="_captcha" value="false" />
   <input type="hidden" name="_template" value="table" />
 
-  <label>
-    Name
-    <input name="name" placeholder="Your name" required />
-  </label>
+  <label htmlFor="visitorName">Name</label>
+  <input id="visitorName" type="text" name="Name" placeholder="Your name" required />
 
-  <label>
-    Email
-    <input name="email" type="email" placeholder="your@email.com" required />
-  </label>
+  <label htmlFor="visitorEmail">Email</label>
+  <input id="visitorEmail" type="email" name="Email" placeholder="your@email.com" required />
 
-  <label>
-    Phone
-    <input name="phone" placeholder="Phone number" required />
-  </label>
+  <label htmlFor="visitorPhone">Phone</label>
+  <input id="visitorPhone" type="tel" name="Phone" placeholder="Phone number" required />
 
-  <label>
-    Message
-    <textarea name="message" placeholder="How can we help?" required />
-  </label>
+  <label htmlFor="visitorMessage">Message</label>
+  <textarea id="visitorMessage" name="Message" placeholder="How can we help?" required></textarea>
 
   <button type="submit">
     <MessageCircle size={18} /> Send Message
