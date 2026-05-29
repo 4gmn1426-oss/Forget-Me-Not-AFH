@@ -194,7 +194,6 @@ function App() {
     <img src={logo6} alt="FMN II" />
   </div>
 </section>
-        </section>
         
 <section id="hiring" className="cta-band">
   <div className="cta-icon"><Users /></div>
