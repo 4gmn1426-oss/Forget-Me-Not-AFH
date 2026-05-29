@@ -30,20 +30,36 @@ function App() {
           <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a className="phone-pill" href="tel:2621234567"><Phone size={18} /> (262) 123-4567</a>
-      </header>
+       <a className="phone-pill" href="tel:2624125114">
+  📞 (262) 412-5114
+</a>
+
+<div className="phone-grid">
+  <div>
+    <strong>FMN I</strong>
+    <a href="tel:2626374709">(262) 637-4709</a>
+  </div>
+
+  <div>
+    <strong>FMN II</strong>
+    <a href="tel:2624560854">(262) 456-0854</a>
+  </div>
+
+  <div>
+    <strong>Business Manager</strong>
+    <a href="tel:2624125114">(262) 412-5114</a>
+  </div>
+</div>
 
       <main id="home">
         <section className="hero">
-          <div className="hero-copy">
-            <p className="eyebrow">Compassionate. Personalized. Family-centered.</p>
-            <h1>Where care feels like home.</h1>
-            <div className="divider"><span></span><Heart size={26} fill="currentColor" /><span></span></div>
-            <p className="lead">Forget Me Not Adult Family Home provides loving, attentive care in a warm, comfortable home where your loved one is treated like family.</p>
-            <div className="button-row">
-              <a className="button primary" href="#contact"><CalendarDays size={18} /> Schedule a Tour</a>
-              <a className="button secondary" href="#services">Learn More</a>
-            </div>
+         <div className="hero-card">
+  <img
+    src="/hero-photo.jpg"
+    alt="Caregiver assisting an older adult in a warm home setting"
+    className="hero-photo"
+  />
+</div>
           </div>
           <div className="hero-card" aria-label="Warm living room image placeholder">
             <div className="room-scene">
