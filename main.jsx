@@ -140,7 +140,7 @@ function App() {
             <p className="section-kicker">Contact</p>
             <h2>We’d love to connect with you.</h2>
             <p>Reach out to ask questions, check availability, or schedule a visit.</p>
-           ```jsx
+           
 <div className="contact-list">
   <p><Phone /> FMN I: <a href="tel:2626374709">(262) 637-4709</a></p>
   <p><Phone /> FMN II: <a href="tel:2624560854">(262) 456-0854</a></p>
