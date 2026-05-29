@@ -70,8 +70,8 @@ function App() {
       alt="Caregiver assisting an older adult in a warm home setting"
       className="hero-photo"
     />
-  </div>
 <section className="hero">
+   </section>
 
         <section className="feature-strip" aria-label="Care highlights">
           <div><Home /><strong>Home-Like Environment</strong><span>Warm and welcoming</span></div>
