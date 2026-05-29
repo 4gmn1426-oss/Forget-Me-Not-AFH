@@ -163,8 +163,7 @@ function App() {
           <a className="button primary light" href="#contact">Schedule a Tour</a>
         </section>
 
-        <section id="gallery" className="gallery-section">
-          <section id="gallery" className="gallery-section">
+      <section id="gallery" className="gallery-section">
   <p className="section-kicker">Gallery</p>
   <h2>A glimpse of home.</h2>
 
