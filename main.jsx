@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Heart, Home, Users, ShieldCheck, Utensils, Pill, CalendarDays, Phone, Mail, MapPin, Image as ImageIcon, MessageCircle } from 'lucide-react';
 import './styles.css';
 import logo from './logo.png';
-import activityPhoto from "./hero-photo.jpg";
+import activityPhoto from "./activity-photo.jpg";
 import logo2 from './logo2.png';
 import logo3 from './logo3.png';
 import logo4 from './logo4.png';
